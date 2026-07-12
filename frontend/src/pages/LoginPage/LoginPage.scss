@@ -1,0 +1,41 @@
+@import '../../styles/_variables';
+$white: #ffffff;
+
+.login-page-form {
+  .social-icons {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+
+    .icon-wrapper {
+      background-color: $white;
+      width: 30%;
+      padding: 8px 0;
+      border-radius: 8px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+      transition: transform 0.2s ease;
+
+      &:hover {
+        transform: scale(1.05);
+      }
+      i {
+        font-size: 1.5rem;
+        color: $btn-color;
+      }
+    }
+  }
+
+  .register-text {
+    text-align: center;
+    margin-top: 1rem;
+
+    .register-link {
+      color: $btn-color;
+      text-decoration: underline;
+      cursor: pointer;
+    }
+  }
+}
